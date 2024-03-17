@@ -8,7 +8,7 @@
 <script>
 
     {
-        const names = ["Eko", "Kurniawan", "Khannedy", "Budi", "Joko"];
+        const names = ["Fathur", "Rahman", "Abdullah", "Andito", "Rahmat"];
         let [firstName, middleName, lastName, ...others] = names;
 
         console.info(firstName);
@@ -19,15 +19,15 @@
 
     {
         const person = {
-            firstName: "Eko",
-            lastName: "Khannedy",
+            firstName: "Fathur",
+            lastName: "Rahman",
             address: {
                 street: "Jalan Belum Ada",
-                city: "Jakarta",
+                city: "Makassar",
                 country: "Indonesia"
             },
             hobby: "Game",
-            channel: "Programmer Zaman Now"
+            channel: "CF Teknologi"
         };
 
         let {firstName, lastName, address: {city, street, country}, ...others} = person;
@@ -47,9 +47,9 @@
         }
 
         const person = {
-            firstName: "Eko",
-            middleName: "Kurniawan",
-            lastName: "Khannedy",
+            firstName: "Fathur",
+            middleName: "Rahman",
+            lastName: "Abdullah",
         };
 
         displayPerson(person);
@@ -65,8 +65,8 @@
     }
 
     {
-        const names = ["Eko", "Budi", "Joko"];
-        const [firstName, middleName = "Kurniawan", lastName = "Khannedy"] = names;
+        const names = ["Fathur", "Andito", "Hanapi"];
+        const [firstName, middleName = "Rahman", lastName = "Abdullah"] = names;
 
         console.info(firstName);
         console.info(middleName);
@@ -75,12 +75,12 @@
 
     {
         const person = {
-            firstName: "Eko",
-            middleName: "Budi",
-            lastName: "Khannedy"
+            firstName: "Fathur",
+            middleName: "Rahman",
+            lastName: "Abdullah"
         };
 
-        let {firstName, middleName = "Kurniawan", lastName} = person;
+        let {firstName, middleName = "Rahman", lastName} = person;
         console.info(firstName);
         console.info(middleName);
         console.info(lastName);
@@ -88,13 +88,13 @@
 
     {
         const person = {
-            firstName: "Eko",
-            middleName: "Budi",
-            lastName: "Khannedy"
+            firstName: "Fathur",
+            middleName: "Rahman",
+            lastName: "Abdullah"
         };
 
         let {firstName: namaDepan,
-            middleName: namaTengah = "Kurniawan",
+            middleName: namaTengah = "Rahman",
             lastName: namaBelakang} = person;
         console.info(namaDepan);
         console.info(namaTengah);
